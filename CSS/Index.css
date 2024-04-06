@@ -54,6 +54,16 @@ footer a {
     border: 2px solid #009dff; 
     padding: 5px; 
 }
+.video-container {
+    border: 4px solid #009dff; 
+    padding: 10px;
+    border-radius: 8px; 
+}
+  .video-container video {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+  }
 @media (max-width: 790px) {
     body {
         max-width: none; 
