@@ -1,43 +1,50 @@
-/* CSS for flex containers */
 .flex-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; 
 }
-
 .flex-item {
-    width: calc(50% - 10px); /* Adjust width as needed */
+    width: calc(50% - 10px); 
     padding: 10px;
-    border: 3px solid #003C61; /* Border style */
-    margin-bottom: 20px; /* Adjust margin as needed */
+    border: 3px solid #009dff; 
+    margin-bottom: 20px; 
     box-sizing: border-box;
 }
-
 .flex-item p {
-    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
-    color: #003C61; /* Text color */
+    font-family: 'Times New Roman', Times, serif; 
+    color: #000000; 
 }
-
-/* CSS to place image on the right and text on the left */
 .flex-item img {
     float: right;
-    margin-left: 20px; /* Adjust margin as needed */
-    max-width: 50%; /* Adjust image width as needed */
-    border: 2px solid #003C61; /* Border around the image */
-    padding: 5px; /* Padding around the image */
+    margin-left: 20px; 
+    max-width: 50%; 
+    border: 2px solid #009dff; 
+    padding: 5px; 
 }
-
-/* Clear float to prevent text from wrapping around the image */
 .flex-item::after {
     content: "";
     display: table;
     clear: both;
 }
-
+@media (min-width: 768px) {
+    .flex-item {
+        width: calc(33.33% - 10px); 
+    }
+}
+@media (min-width: 1024px) {
+    .flex-item {
+        width: calc(25% - 10px); 
+    }
+}
+@media (min-width: 1200px) {
+    .flex-item {
+        width: calc(20% - 10px); 
+    }
+}
 footer {
     display: block;
-    background-color: #003C61;
+    background-color: #009dff;
     text-align: center;
     bottom: 0;
     height: 120px;
@@ -46,11 +53,9 @@ footer {
     font-family: "Times New Roman";
     color: #FFFFFF;
 }
-
 footer a {
     color: #FFFFFF;
 }
-
 h2 {
     text-align: center;
 }

@@ -3,38 +3,32 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .flex-row {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-
 h3 {
     text-align: center;
 }
-
 h2 {
     text-align: center;
 }
-
 .flex-item {
     width: 45%;
     margin: 10px;
     padding: 10px;
-    border: 2px solid #003C61;
+    border: 2px solid #009dff;
     border-radius: 5px;
 }
-
 article {
     display: block;
     margin: auto;
     text-align: center;
 }
-
 footer {
     display: block;
-    background-color: #003C61;
+    background-color: #009dff;
     text-align: center;
     bottom: 0;
     height: 120px;
@@ -43,33 +37,30 @@ footer {
     font-family: "Times New Roman";
     color: #FFFFFF;
 }
-
 footer a {
     color: #FFFFFF;
 }
-
 #image-container {
     display: flex;
     justify-content: center;
 }
-
 #image-container img {
-    margin: 0 10px; /* Adjust margin between images as needed */
+    margin: 0 10px; 
     align-self: center; 
+    border: 4px solid #009dff;
+    border-radius: 5px; 
 }
-
-/* Media query for medium devices (up to 790px) */
+.flex-item img {
+    border: 2px solid #009dff; 
+    padding: 5px; 
+}
 @media (max-width: 790px) {
     body {
-        max-width: none; /* Set maximum width for the entire website */
-        margin: 0 auto; /* Center the content horizontally */
+        max-width: none; 
+        margin: 0 auto; 
     }
 }
-
-/* Media query for large devices (over 790px) */
 @media (min-width: 791px) {
-    /* Add styles for large devices here */
-    /* For example, adjust layout or increase width of elements */
 }
 
 
